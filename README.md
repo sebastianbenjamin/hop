@@ -1,0 +1,1 @@
+<p align="center"><a href="" target="_blank"><img src="https://github.com/sebastianbenjamin/hop/blob/main/public/front/img/Logo%20Hangout.png" width="400" alt=""></a></p>
