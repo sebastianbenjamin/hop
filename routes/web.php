@@ -14,11 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware(['web', 'disableBackButton'])->group(function(){
-    Route::middleware(['loggedIn'])->group(function(){
-        Route::get('login', [AuthenticationsController::class, 'login'])->name('login');
-        Route::post('post-login', [AuthenticationsController::class, 'postLogin'])->name('post-login');
-    });
+Route::middleware(['web'])->group(function(){
+    Route::get('login', [AuthenticationsController::class, 'login'])->name('login');
+    Route::post('post-login', [AuthenticationsController::class, 'postLogin'])->name('post-login');
     Route::get('logout', [AuthenticationsController::class, 'logout'])->name('logout');
 });
 
